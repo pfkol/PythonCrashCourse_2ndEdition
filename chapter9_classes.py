@@ -27,3 +27,31 @@ class Car:
     def increment_odometer(self, miles):
         self.odometer_reading += miles
 
+    def descriptive_name(self):
+        long_name = f"{self.year} {self.manufacturer} {self.model}"
+
+
+class Battery:
+    
+    def __init__(self, batterySize=75):
+        self.batterySize = batterySize
+    
+    def describe_battery(self):
+        print(f"Your elctric car has {self.batterySize} battery capacity")
+
+    def get_range(self):
+        if self.batterySize == 75:
+            range=100
+        if self.batterySize == 100:
+            range=200
+        return range
+
+
+class ElectricCar(Car):
+
+    def __init__(self, make, model, year):
+        super().__init__(make, model, year)
+        self.battery = Battery()
+    
+    
+    

@@ -17,3 +17,7 @@ if __name__ == '__main__':
 
 my_dog = chapter9_classes.Dog("psiabik", 3)
 print(my_dog.name)
+
+myTesla = chapter9_classes.ElectricCar('elec', "electr", 2021)
+myTesla.battery.describe_battery()
+print(myTesla.battery.get_range())
