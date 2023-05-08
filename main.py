@@ -1,5 +1,6 @@
 
 import chapter9_classes
+import chapter10_filesAndExceptions as chapter10
 # This is a sample Python script.
 
 # Press Shift+F10 to execute it or replace it with your code.
@@ -21,3 +22,5 @@ print(my_dog.name)
 myTesla = chapter9_classes.ElectricCar('elec', "electr", 2021)
 myTesla.battery.describe_battery()
 print(myTesla.battery.get_range())
+
+chapter10.openFileHandleErrorSilent()
