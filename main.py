@@ -1,6 +1,7 @@
 
 import chapter9_classes
 import chapter10_filesAndExceptions as chapter10
+import chapter11_testing
 # This is a sample Python script.
 
 # Press Shift+F10 to execute it or replace it with your code.
@@ -16,11 +17,12 @@ if __name__ == '__main__':
     print_hi('PyCharm')
 
 
-my_dog = chapter9_classes.Dog("psiabik", 3)
-print(my_dog.name)
+#my_dog = chapter9_classes.Dog("psiabik", 3)
+#print(my_dog.name)
 
-myTesla = chapter9_classes.ElectricCar('elec', "electr", 2021)
-myTesla.battery.describe_battery()
-print(myTesla.battery.get_range())
+#myTesla = chapter9_classes.ElectricCar('elec', "electr", 2021)
+#myTesla.battery.describe_battery()
+#print(myTesla.battery.get_range())
 
 chapter10.openFileHandleErrorSilent()
+print(chapter11_testing.get_formatted_name('Piotr', 'kolodziej'))
