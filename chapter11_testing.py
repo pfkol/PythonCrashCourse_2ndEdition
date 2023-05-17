@@ -39,6 +39,13 @@ class AnonymousSurvey:
             print(f' - {item}')
 
 class TestAnonymousSurvey(unittest.TestCase):
+    
+    def setUp(self):
+        question = "What language did you forst learn to speak?"
+        self.my_survey = AnonymousSurvey(question)
+        self.responses = ['English', 'Spanish', 'Mandarin']
+
+
     def test_store_single_response(self):
         question = "Whant language did you forst learn to speak?"
         my_survey = AnonymousSurvey(question)
